@@ -1,0 +1,35 @@
+
+<div class="container">
+  <form #f="ngForm" (ngSubmit)="log(f)">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" ngModel name="name" #name="ngModel"  class="form-control" id="name" placeholder="name" >
+    </div>
+    <div class="form-group">
+      <label for="email">Email address</label>
+      <input type="email" ngModel name="email" #email="ngModel"  class="form-control" id="email" placeholder="name@example.com">
+    </div>
+    
+    <div class="form-group">
+      <label for="tele">Tele</label>
+      <input type="text" ngModel name="tele" #tele="ngModel" class="form-control" id="tele" placeholder="Tele" >
+    </div>
+    <div class="form-group">
+      <label for="ville">Ville</label>
+      <input type="text" ngModel name="ville" #ville="ngModel" class="form-control" id="ville" placeholder="Vill" >
+    </div>
+  
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="text" class="form-control" ngModel name="password" #password="ngModel"  id="password" placeholder="Username" >
+    </div>
+    
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input type="text" class="form-control"  ngModel name="username" #username="ngModel" id="username" placeholder="Username" >
+    </div>
+    <button type="submit" class="btn btn-outline-success">Success</button>
+  
+  </form>
+
+</div>
